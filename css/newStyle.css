@@ -1,0 +1,169 @@
+  body {
+      position: relative; 
+      font-family: 'Open Sans', sans-serif;
+  }
+  .affix {
+      top:0;
+      width: 100%;
+      z-index: 9999 !important;
+  }
+  .navbar {
+      margin-bottom: 0px;
+      border-radius: 0;
+  }
+    .navbar-bg-blur{
+      background-color: black;
+      opacity: .85;
+  }
+
+  .affix ~ .container {
+     position: relative;
+     top: 50px;
+  }
+  #Front{
+      background-image:  url(../images/hero-bg.jpg);
+      min-height: 700px;
+      position: relative;
+      background-size: cover;
+  }
+    .front-blur{
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: black;
+      opacity: .7;
+  }
+    .front-content{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      opacity: 1;
+      color: white;
+  }
+  .bolder{
+      font-weight: bolder;
+  }
+ .btn-subscribe{
+      margin: 5px 0;
+      background: none;
+      color: white;
+      border: 2px solid white;
+      border-radius: 4px;
+      transition: .5s;
+      padding: 5px 15px;
+  }
+
+ .btn-subscribe:hover{
+      background: #03C4EB;
+      color: white;
+      border: 2px solid #03C4EB;
+      border-radius: 4px;
+  }
+
+    #aboutus{
+      padding: 50px 0px;
+  }
+  .bar{
+      width: 60px;
+      height: 4px;
+      background: #03C4EB;
+  }
+  #services{
+      background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../images/services-bg.jpg) fixed center center;
+      background-size: cover;
+      opacity: 1;
+      padding: 50px 0;
+      background-color: black;
+  }
+  #services .media .services-icon{
+      font-size: 24px;
+      background: #03C4EB;
+      padding: 10px 15px;
+      border-radius: 50%;
+      border: 1px solid #03C4EB;
+      color: white;
+      transition: .5s;
+  }
+  .services-item{
+      margin: 10px 0;
+  }
+  #services .media:hover .services-icon{
+      background: white;
+      color: #03C4EB;
+  }
+  #subscribe{
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/subscribe-bg.jpg);
+      background-attachment: fixed;
+      background-size: cover;
+      padding: 50px 0;
+      color: white;
+  }
+  #services .media{
+      margin: 10px 0;
+  }
+  .btn-subs{
+      text-align: center;
+      padding: 20px 0;
+  }
+  #portfolio{
+      padding: 50px 0;
+  }
+  .portfolio-item{
+      margin: 10px 0;
+      position: relative;
+  }
+  #testimonial{
+      background: #F6F6F6;
+      padding: 50px 0;
+  }
+  .portfolio-item:before{
+      top: 0;
+      left: 0;
+      content: "";
+      position: absolute;
+      height: 0%;
+      width: 100%;
+      background: #D2D2D2;
+      opacity: 0;
+      transition: .5s;
+  }
+  .portfolio-item:after{
+      content: "";
+      position: absolute;
+      height: 0%;
+      width: 100%;
+      background: #D2D2D2;
+      opacity: 0;
+      transition: .5s;
+      bottom: 0;
+      left: 0;
+      text-align: center;
+  }  
+  .portfolio-item:hover:before{
+      opacity: .5;
+      height: 50%;
+  }
+  .portfolio-item:hover:after{
+      opacity: .5;
+      height: 50%;
+  }
+  .comments{
+    background: white;
+    padding: 50px 10px;
+    margin: 50px 0 0;
+    border-radius: 5px;
+    text-align: center;
+  }
+  #team{
+      padding: 50px 0;
+  }
+  #contactus{
+      padding: 50px 0;
+      background: #F7F7F7;
+  }
+  .form-control{
+      border-radius: 0px;
+  }
